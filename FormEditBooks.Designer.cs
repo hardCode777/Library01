@@ -33,7 +33,7 @@ namespace Library
             this.buttonEditBooksRemove = new System.Windows.Forms.Button();
             this.buttonEditBooksAdd = new System.Windows.Forms.Button();
             this.listBoxEditBooks = new System.Windows.Forms.ListBox();
-            this.textEditBooksId = new System.Windows.Forms.TextBox();
+            this.textEditBooksAuthor = new System.Windows.Forms.TextBox();
             this.listBoxAuthors = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
@@ -73,13 +73,14 @@ namespace Library
             this.listBoxEditBooks.Size = new System.Drawing.Size(328, 450);
             this.listBoxEditBooks.TabIndex = 6;
             // 
-            // textEditBooksId
+            // textEditBooksAuthor
             // 
-            this.textEditBooksId.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textEditBooksId.Location = new System.Drawing.Point(334, 12);
-            this.textEditBooksId.Name = "textEditBooksId";
-            this.textEditBooksId.Size = new System.Drawing.Size(283, 32);
-            this.textEditBooksId.TabIndex = 5;
+            this.textEditBooksAuthor.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textEditBooksAuthor.Location = new System.Drawing.Point(334, 12);
+            this.textEditBooksAuthor.Name = "textEditBooksAuthor";
+            this.textEditBooksAuthor.Size = new System.Drawing.Size(283, 32);
+            this.textEditBooksAuthor.TabIndex = 5;
+            this.textEditBooksAuthor.Text = "Book\'s Author";
             // 
             // listBoxAuthors
             // 
@@ -100,10 +101,9 @@ namespace Library
             this.Controls.Add(this.buttonEditBooksRemove);
             this.Controls.Add(this.buttonEditBooksAdd);
             this.Controls.Add(this.listBoxEditBooks);
-            this.Controls.Add(this.textEditBooksId);
+            this.Controls.Add(this.textEditBooksAuthor);
             this.Name = "FormEditBooks";
             this.Text = "FormEditBooks";
-            //this.Load += new System.EventHandler(this.FormEditBooks_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -115,7 +115,7 @@ namespace Library
         private System.Windows.Forms.Button buttonEditBooksRemove;
         private System.Windows.Forms.Button buttonEditBooksAdd;
         private System.Windows.Forms.ListBox listBoxEditBooks;
-        private System.Windows.Forms.TextBox textEditBooksId;
+        private System.Windows.Forms.TextBox textEditBooksAuthor;
         private System.Windows.Forms.ListBox listBoxAuthors;
     }
 }

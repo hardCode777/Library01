@@ -18,9 +18,9 @@ namespace Library
         {
             InitializeComponent();
             lib = serialiseFile.DeSerialize();
+            this.FormClosed += (sender, e) => serialiseFile.Serialize(lib);
 
             toEditReaders.Click += ToEditReaders_Click;
-            this.FormClosed += (sender, e) => serialiseFile.Serialize(lib);
 
             toEditAuthors.Click += ToEditAuthors_Click;
 

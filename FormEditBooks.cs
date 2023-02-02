@@ -25,7 +25,7 @@ namespace Library
             listBoxEditBooks.DataSource = bindingSourceBooks;
             listBoxEditBooks.DisplayMember = "Name";
             listBoxEditBooks.ValueMember = "Id";
-            textEditBooksId.DataBindings.Add("Text", bindingSourceBooks, "Id");
+            textEditBooksAuthor.DataBindings.Add("Text", bindingSourceBooks, "Id");
             textEditBooksName.DataBindings.Add("Text", bindingSourceBooks, "Name");
             buttonEditBooksAdd.Click += ButtonEditBooksAdd_Click;
             buttonEditBooksRemove.Click += ButtonEditBooksRemove_Click;
