@@ -29,7 +29,7 @@ namespace Library
 
         private void ToEditBooks_Click(object sender, EventArgs e)
         {
-            FormEditBooks formEditBooks = new FormEditBooks(lib.Books);
+            FormEditBooks formEditBooks = new FormEditBooks(lib.Books,lib.Authors);
             formEditBooks.ShowDialog();
         }
 

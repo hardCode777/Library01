@@ -15,9 +15,10 @@ namespace Library
 
         BindingList<Author> authors;
         BindingSource bindingSourceAuthors;
-        public FormEditBooks(BindingList<Book> books)
+        public FormEditBooks(BindingList<Book> books,BindingList<Author> authors)
         {
             InitializeComponent();
+            //books
             this.books = books;
             bindingSourceBooks = new BindingSource();
             bindingSourceBooks.DataSource = books;
@@ -29,10 +30,11 @@ namespace Library
             buttonEditBooksAdd.Click += ButtonEditBooksAdd_Click;
             buttonEditBooksRemove.Click += ButtonEditBooksRemove_Click;
             // authors
-            //bindingSourceAuthors = new BindingSource();
-            //bindingSourceAuthors.DataSource = authors;
-            //listBoxAuthors.DataSource = bindingSourceAuthors;
-            //listBoxAuthors.DisplayMember = "Name";
+            this.authors = authors;
+            bindingSourceAuthors = new BindingSource();
+            bindingSourceAuthors.DataSource = authors;
+            listBoxAuthors.DataSource = bindingSourceAuthors;
+            listBoxAuthors.DisplayMember = "Name";
 
         }
 
